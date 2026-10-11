@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a7193e">
+  <meta name="description" content="A Sarkari Result-inspired directory for government job, result, admit card and exam updates.">
+  <title>Sarkari Result 2026 | Government Jobs, Results &amp; Admit Cards</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="masthead" id="home">
+    <a class="brand" href="#home" aria-label="Sarkari Result home">
+      <span class="brand-seal" aria-hidden="true"><span>SR</span></span>
+      <span class="brand-copy"><strong>SARKARI RESULT</strong><small>WWW.SARKARIRESULT.COM</small></span>
+    </a>
+    <time class="masthead-date" id="today-date"></time>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a class="active" href="#home" data-filter="All">Home</a>
+        <a href="#updates" data-filter="Latest Job">Latest Job</a>
+        <a href="#updates" data-filter="Admit Card">Admit Card</a>
+        <a href="#updates" data-filter="Result">Results</a>
+        <a href="#updates" data-filter="Admission">Admission</a>
+        <a href="#updates" data-filter="Answer Key">Answer Key</a>
+        <a href="#updates" data-filter="Syllabus">Syllabus</a>
+        <a href="#updates" data-filter="All">More⌄</a>
+      </div>
+      <label class="nav-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search notices</span><input id="search-input" type="search" placeholder="Search notices" autocomplete="off"></label>
+    </div>
+  </nav>
+
+  <main>
+    <section class="intro" aria-labelledby="page-heading">
+      <h1 id="page-heading">Sarkari Result 2026 – Government Jobs, Results &amp; Admit Cards</h1>
+      <p class="welcome-line">Welcome to the Sarkari Result demo portal <span>·</span> Jobs, exams and results in one place</p>
+      <p class="social-links"><a href="#updates">Android App</a><span>||</span><a href="#updates">YouTube Channel</a><span>||</span><a href="#updates">Apple / iOS App</a><span>||</span><a href="#updates">Follow Instagram</a></p>
+      <div class="announcement-strip" aria-label="Latest announcements"><span>Latest updates</span><p>Job forms, results, admit cards and exam notices</p><a href="#updates">Browse notices ↓</a></div>
+    </section>
+
+    <section class="quick-links" aria-label="Browse update categories">
+      <a class="quick-link quick-results" href="#updates" data-category="Result">Results</a>
+      <a class="quick-link quick-admit" href="#updates" data-category="Admit Card">Admit Card</a>
+      <a class="quick-link quick-jobs" href="#updates" data-category="Latest Job">Latest Job</a>
+      <a class="quick-link quick-keys" href="#updates" data-category="Answer Key">Answer Key</a>
+      <a class="quick-link quick-admission" href="#updates" data-category="Admission">Admission</a>
+    </section>
+
+    <section class="updates-section" id="updates" aria-labelledby="updates-title">
+      <div class="updates-heading"><h2 id="updates-title">Latest Updates</h2><span class="sample-tag">SAMPLE LISTINGS</span><span class="result-count" id="result-count" aria-live="polite"></span></div>
+      <div class="filter-tabs" role="group" aria-label="Filter notices by type">
+        <button class="filter-button selected" type="button" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="Latest Job" aria-pressed="false">Latest Job</button>
+        <button class="filter-button" type="button" data-filter="Admit Card" aria-pressed="false">Admit Card</button>
+        <button class="filter-button" type="button" data-filter="Result" aria-pressed="false">Results</button>
+        <button class="filter-button" type="button" data-filter="Answer Key" aria-pressed="false">Answer Key</button>
+        <button class="filter-button" type="button" data-filter="Admission" aria-pressed="false">Admission</button>
+        <button class="filter-button" type="button" data-filter="Syllabus" aria-pressed="false">Syllabus</button>
+      </div>
+      <div class="notice-list" id="notice-list" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><strong>No matching updates</strong><p>Try another search or select a different category.</p><button id="clear-filters" type="button">Clear filters</button></div>
+      <p class="directory-note">Independent design demo inspired by SarkariResult.com. Listings and dates are examples only, not official announcements. Verify information with the recruiting organization.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#home">SARKARI RESULT</a><span>Independent design demo · Not affiliated with SarkariResult.com or any government organization</span><a href="#home">Back to top ↑</a></footer>
+
+  <dialog class="notice-dialog" id="notice-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span class="dialog-category" id="dialog-category"></span><button class="dialog-close" type="button" aria-label="Close details">×</button></div>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-org" id="dialog-org"></p>
+    <div class="dialog-details" id="dialog-details"></div>
+    <p class="dialog-disclaimer">Sample notice for this design demo. Confirm all information with the recruiting organization.</p>
+    <button class="dialog-done" type="button">Close notice</button>
+  </dialog>
+</body>
+</html>
